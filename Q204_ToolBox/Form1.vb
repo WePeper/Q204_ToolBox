@@ -7,7 +7,7 @@ Public Class Form1
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        Dim OpenExE = readAndGetIni.GetINI("AppOpen", "02", "", configPath)
+        Dim OpenExE = readAndGetIni.GetINI("AppOpen", "01", "", configPath)
         open(OpenExE)
     End Sub
 
@@ -19,12 +19,9 @@ Public Class Form1
     End Function
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
-        Dim OpenExE = readAndGetIni.GetINI("AppOpen", "03", "", configPath)
+        Dim OpenExE = readAndGetIni.GetINI("AppOpen", "02", "", configPath)
         open(OpenExE)
     End Sub
 
-    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
-        Dim OpenExE = readAndGetIni.GetINI("AppOpen", "01", "", configPath)
-        open(OpenExE)
-    End Sub
+
 End Class
